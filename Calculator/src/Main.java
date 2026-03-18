@@ -7,6 +7,7 @@ public class Main {
 
         System.out.println("Sum: " + add(a, b));
         System.out.println("Difference: " + subtract(a, b));
+        System.out.println("Multiplication: " + multiply(a, b));
     }
 
     public static int add(int a, int b) {
@@ -15,5 +16,9 @@ public class Main {
 
     public static int subtract(int a, int b) {
         return a - b;
+    }
+
+    public static int multiply(int a, int b) {
+        return a * b;
     }
 }
