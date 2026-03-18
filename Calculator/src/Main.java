@@ -21,4 +21,17 @@ public class Main {
     public static int multiply(int a, int b) {
         return a * b;
     }
+
+    public static int calculateMax(int[] values) {
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Array cannot be empty");
+        }
+        int max = values[0];
+        for (int v : values) {
+            if (v > max) {
+                max = v;
+            }
+        }
+        return max;
+    }
 }
